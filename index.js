@@ -9,7 +9,7 @@ const routes = {
 const app = express();
 app.use(express.json());
 
-// Connect to MongoDB
+// Connect to MongoDB (DB in .env)
 mongoose.connect(process.env.DB)
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
